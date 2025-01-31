@@ -1,0 +1,24 @@
+package com.lpu;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Circle {
+	float radius;
+
+	public float getRadius() {
+		return radius;
+	}
+
+	public void setRadius(float radius) {
+		this.radius = radius;
+	}
+	
+	public void area(float radius) {
+		double result = 3.14 * radius * radius;
+		System.out.println(result);
+		
+	}
+	
+
+}

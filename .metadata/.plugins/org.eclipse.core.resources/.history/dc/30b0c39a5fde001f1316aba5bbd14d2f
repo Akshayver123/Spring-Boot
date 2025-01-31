@@ -1,0 +1,17 @@
+package com.lpu;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FirstSpringBootLpuApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FirstSpringBootLpuApplication.class, args);
+		
+		System.out.println("This is my first output on console!!");
+		System.out.println("Angular is the best fw ever");
+	}
+
+}
+ 

@@ -1,0 +1,27 @@
+package com.lpu;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class TestController {
+	@RequestMapping("/show")
+	@ResponseBody
+	public String showMsg() {
+		return "I like JavaScript More";
+	}
+	@RequestMapping("/data")
+	@ResponseBody
+	public int showData() {
+		return 100;
+	}
+	@GetMapping(value = "/accept/{v}")
+	@ResponseBody
+	public int showParameter(@PathVariable("v")Integer v1) {
+		return v1;
+	}
+
+}

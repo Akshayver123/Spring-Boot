@@ -1,0 +1,27 @@
+package com.lpu;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+@Service
+
+public class PlayerService {
+	List<PlayerModel> list = new ArrayList<PlayerModel>();
+	PlayerModel p1 = new PlayerModel(101, "Sachin Tandulkar");
+	PlayerModel p2 = new PlayerModel(102, "Sachin Tandulkar");
+	PlayerModel p3 = new PlayerModel(103, "Sachin Tandulkar");
+	PlayerModel p4 = new PlayerModel(104, "Sachin Tandulkar");
+	
+	public PlayerService() {
+		list.add(p1);
+		list.add(p2);
+		list.add(p3);
+		list.add(p4);
+	}
+	public List<PlayerModel> getAllPlayers(){
+		return list;
+	}
+	
+
+}

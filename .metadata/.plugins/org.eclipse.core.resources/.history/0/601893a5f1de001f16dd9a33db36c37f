@@ -1,0 +1,15 @@
+package com.lpu;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class PlayerController {
+	
+	PlayerService ps;
+	@GetMapping("/players")
+	public List<PlayerModel> showPlayers(){
+		return this.ps.getAllPlayers();
+	}
+
+}
